@@ -50,13 +50,13 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: app1.cloudcamp.in
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: app1
-            port:
-              number: 80
+    - host: app1.cloudcamp.in
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: app1
+                port:
+                  number: 80
